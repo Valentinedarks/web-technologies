@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Останні новини</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        header { border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #333; }
+        .layout { display: flex; gap: 20px; }
+        main { flex: 3; }
+        aside { flex: 1; border: 1px solid #ddd; padding: 15px; border-radius: 5px; height: fit-content; }
+        article { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
+        article h2 { margin-top: 0; font-size: 1.2em; }
+        time { color: gray; font-size: 0.9em; }
+        footer { margin-top: 20px; text-align: center; font-size: 0.9em; color: #555; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Останні новини</h1>
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#">Новини</a>
+            <a href="#">Контакти</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <main>
+            <article>
+                <h2>Відкрито новий кампус університету</h2>
+                <time datetime="2026-09-01">1 вересня 2026</time>
+                <p>Короткий текст новини про відкриття нового кампусу для студентів. Створено сучасні лабораторії та комфортні зони відпочинку.</p>
+                <p><b>Автор: Ірина Коваль</b></p>
+            </article>
+
+            <article>
+                <h2>Стартував конкурс студентських проектів</h2>
+                <time datetime="2026-09-05">5 вересня 2026</time>
+                <p>Опис умов участі та термінів подачі заявок на конкурс. Переможці отримають гранти на реалізацію своїх ІТ-ідей.</p>
+                <p><b>Автор: Олег Петренко</b></p>
+            </article>
+
+            <article>
+                <h2>Результати літньої практики</h2>
+                <time datetime="2026-09-10">10 вересня 2026</time>
+                <p>Короткий підсумок практики студентів у партнерських компаніях. Багато хто отримав пропозиції щодо працевлаштування.</p>
+                <p><b>Автор: Марія Шевчук</b></p>
+            </article>
+        </main>
+
+        <aside>
+            <h2>Популярне</h2>
+            <ul>
+                <li><a href="#">Новина 1</a></li>
+                <li><a href="#">Новина 2</a></li>
+                <li><a href="#">Новина 3</a></li>
+                <li><a href="#">Новина 4</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Останні новини. Валентин Руснак, 2 курс, ННІФТКН - <a href="mailto:v.rusnak@example.com">v.rusnak@example.com</a></p>
+    </footer>
+</div>
+
+</body>
+</html>
