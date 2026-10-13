@@ -1,0 +1,66 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: red;
+    font-size: 32px;
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 20px;
+    margin: 6px 0;
+}
+
+hr {
+    width: 60%;
+    border: 0;
+    height: 4px;
+    background-color: green;
+}
+
+.recipe {
+    width: 700px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 1px solid #6a6adf;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.amount {
+    font-size: 14px;
+}
+
+.underline {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.old {
+    text-decoration: line-through;
+}
+
+.footer {
+    font-family: "Courier New", Courier, monospace;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+#hint {
+    background-color: yellow;
+}
