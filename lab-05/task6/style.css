@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #1b2a41;
+    background-image: url('img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.tags div {
+    display: inline;
+
+    width: 200px;
+    height: 100px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #d6f1fc;
+}
+
+.spans {
+    margin-top: 15px;
+}
+
+.spans span {
+    display: block;
+    width: 150px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #ffe2b8;
+}
+
+.repeat {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 250px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    border: 1px solid #333;
+    background-image: url('img/icon.svg');
+    font-weight: 700;
+}
+
+.rx { background-repeat: repeat-x; }
+.ry { background-repeat: repeat-y; }
+.sp { background-repeat: space; }
+.rd { background-repeat: round; }
+
+.size {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    border: 2px solid #333;
+    background-image: url('img/photo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contain { background-size: contain; }
+.cover   { background-size: cover; }
+
+.attach {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 400px;
+    max-height: 150px;
+    overflow: auto;
+    margin: 0 10px 10px 0;
+    border: 1px solid #333;
+    background-image: url('img/icon.svg');
+    background-color: #fff;
+}
+
+.scroll { background-attachment: scroll; }
+.local  { background-attachment: local; }
