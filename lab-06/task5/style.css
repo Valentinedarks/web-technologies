@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-color: #e4e4e4;
+    font-family: Arial, sans-serif;
+}
+
+.scene {
+    position: relative;
+    width: 620px;
+    height: 430px;
+    margin: 30px auto;
+    background-color: #b9b9b9;
+}
+
+.card {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 2;
+    width: 290px;
+    height: 360px;
+    background-color: #000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.location {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .location {
+    visibility: visible;
+    opacity: 1;
+}
+
+.day {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    color: white;
+    font-size: 120px;
+    font-weight: 700;
+    opacity: 0.75;
+}
+
+.cloud {
+    position: absolute;
+    top: 90px;
+    left: 190px;
+    z-index: 3;
+    width: 280px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.85);
+    opacity: 0.92;
+}
+
+.cloud:before,
+.cloud:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.cloud:before {
+    top: -50px;
+    left: 40px;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 30px 8px rgba(255, 255, 255, 0.8);
+}
+
+.cloud:after {
+    top: -28px;
+    left: 150px;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 0 30px 8px rgba(255, 255, 255, 0.8);
+}
+
+.arrows {
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    z-index: 4;
+    display: flex;
+}
+
+.arrow {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #222;
+    font-size: 34px;
+    line-height: 52px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.arrow:hover,
+.arrow:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+
+.forecast {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 290px;
+    height: 120px;
+    margin: 0;
+    padding: 40px 10px 0 40px;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.18);
+    list-style: none;
+    font-size: 15px;
+}
+
+.forecast-day {
+    display: block;
+    padding: 0 4px;
+}
+
+.forecast-name {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 11px;
+    opacity: 0.35;
+}

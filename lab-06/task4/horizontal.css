@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding-top: 56px;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 56px;
+    background-color: #555;
+}
+
+.menu,
+.submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu > .menu-item {
+    float: left;
+}
+
+.menu > .menu-item--right {
+    float: right;
+}
+
+.menu-link {
+    display: block;
+    height: 56px;
+    padding: 0 28px;
+    color: white;
+    line-height: 56px;
+    text-decoration: none;
+}
+
+.menu-link .material-icons {
+    line-height: 56px;
+    vertical-align: top;
+}
+
+.menu-item:hover > .menu-link,
+.menu-link:focus {
+    background-color: #777;
+    outline: none;
+}
+
+.menu-item.active > .menu-link {
+    background-color: #4caf50;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #444;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.submenu .menu-link {
+    height: 44px;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 44px;
+    white-space: nowrap;
+}
+
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+.menu > .menu-item--right > .submenu {
+    left: auto;
+    right: 0;
+}
+
+.menu-item:hover > .submenu,
+.menu-item:focus-within > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.subbar {
+    position: sticky;
+    top: 56px;
+    z-index: 50;
+    padding: 12px 20px;
+    background-color: #2e7d32;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+    font-size: 20px;
+    line-height: 2;
+}
