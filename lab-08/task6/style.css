@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-block: #ffd943;
+    --color-number: #fff;
+    --gap: 10px;
+    --row-height: clamp(48px, 9vw, 100px);
+}
+
+body {
+    padding: var(--gap);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.tree {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    counter-reset: block;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-block);
+    color: var(--color-number);
+    font-family: "Times New Roman", serif;
+    font-size: clamp(16px, 4.5vw, 52px);
+    counter-increment: block;
+}
+
+.block::before {
+    content: counter(block);
+}
+
+.block:nth-child(1) { grid-column: span 12; }
+.block:nth-child(n+2):nth-child(-n+3) { grid-column: span 6; }
+.block:nth-child(n+4):nth-child(-n+6) { grid-column: span 4; }
+.block:nth-child(n+7):nth-child(-n+10) { grid-column: span 3; }
+.block:nth-child(n+11):nth-child(-n+16) { grid-column: span 2; }
+.block:nth-child(n+17) { grid-column: span 1; }
