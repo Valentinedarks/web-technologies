@@ -2,48 +2,48 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Завдання 1 - Таблиця</title>
+    <title>Завдання 1 - Таблиця (Оновлено)</title>
 </head>
 <body>
     <div align="center">
         <a href="../index.html">Повернутись на головну</a><br><br>
         
-        <table border="2" bordercolor="black" cellspacing="0" cellpadding="0">
-            <!-- Верхня блакитна смуга -->
-            <tr><td colspan="6" bgcolor="#40E0D0" width="300" height="50"></td></tr>
-            
+        <table border="2" bordercolor="black" cellspacing="0" cellpadding="0" width="300" height="300">
+            <!-- Рядок 1: Верхня зовнішня бірюзова смуга (на всю ширину) -->
             <tr>
-                <td rowspan="4" bgcolor="#40E0D0" width="50" height="200"></td>
-                <td colspan="4" bgcolor="#FFFACD" width="200" height="50"></td>
-                <td rowspan="4" bgcolor="#40E0D0" width="50" height="200"></td>
+                <td colspan="6" bgcolor="#40E0D0" height="50"></td>
             </tr>
             
+            <!-- Рядок 2: Початок лівої/правої зовнішніх світло-жовтих смуг та верхня внутрішня бірюзова смуга -->
             <tr>
-                <td rowspan="2" bgcolor="#FFFACD" width="50" height="100"></td>
-                <td colspan="2" bgcolor="#40E0D0" width="100" height="50"></td>
-                <td rowspan="2" bgcolor="#FFFACD" width="50" height="100"></td>
+                <td rowspan="4" bgcolor="#FFFACD" width="50"></td>
+                <td colspan="4" bgcolor="#40E0D0" height="50"></td>
+                <td rowspan="4" bgcolor="#FFFACD" width="50"></td>
             </tr>
             
+            <!-- Рядок 3: Початок внутрішніх світло-жовтих смуг та верхня частина кольорового центру -->
             <tr>
-                <!-- Центральний кольоровий квадрат (вкладена таблиця) -->
-                <td colspan="2" width="100" height="50">
-                    <table border="1" bordercolor="black" cellspacing="0" cellpadding="0" width="100%" height="100%">
-                        <tr>
-                            <td bgcolor="red" width="50" height="25"></td>
-                            <td bgcolor="blue" width="50" height="25"></td>
-                        </tr>
-                        <tr>
-                            <td bgcolor="#32CD32" width="50" height="25"></td>
-                            <td bgcolor="yellow" width="50" height="25"></td>
-                        </tr>
-                    </table>
-                </td>
+                <td rowspan="2" bgcolor="#FFFACD" width="50"></td>
+                <td bgcolor="red" width="50" height="50"></td>
+                <td bgcolor="blue" width="50" height="50"></td>
+                <td rowspan="2" bgcolor="#FFFACD" width="50"></td>
             </tr>
             
-            <tr><td colspan="4" bgcolor="#FFFACD" width="200" height="50"></td></tr>
+            <!-- Рядок 4: Нижня частина кольорового центру -->
+            <tr>
+                <td bgcolor="#32CD32" width="50" height="50"></td>
+                <td bgcolor="yellow" width="50" height="50"></td>
+            </tr>
             
-            <!-- Нижня блакитна смуга -->
-            <tr><td colspan="6" bgcolor="#40E0D0" width="300" height="50"></td></tr>
+            <!-- Рядок 5: Нижня внутрішня бірюзова смуга -->
+            <tr>
+                <td colspan="4" bgcolor="#40E0D0" height="50"></td>
+            </tr>
+            
+            <!-- Рядок 6: Нижня зовнішня бірюзова смуга (на всю ширину) -->
+            <tr>
+                <td colspan="6" bgcolor="#40E0D0" height="50"></td>
+            </tr>
         </table>
     </div>
 </body>
